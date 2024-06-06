@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: #121212;
+    color: white;
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff9c7b;
+}
+
+.btn-primary {
+    background-color: #fc7649;
+    transition: background-color 0.2s;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #ff9c7b;
+}
+
+.btn-w{
+    border-color: #fc7649;
+    color: #fc7649;
+}
+
+.btn-w:hover{
+    color: #fff;
+    background-color: #fc7649;
+    border-color: #fc7649;
+}
+
+.intro-section {
+    background: url('images/hero5.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.feature-left .feature-text {
+    order: 1;
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.feature-left .feature-image {
+    order: 2;
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.feature-right .feature-text {
+    order: 2;
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.feature-right .feature-image {
+    order: 1;
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.team-member {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature {
+        flex-direction: column;
+        height: auto;
+    }
+    .feature-left .feature-text,
+    .feature-left .feature-image,
+    .feature-right .feature-text,
+    .feature-right .feature-image {
+        order: 0;
+        padding: 0;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.footer .social-icons a i {
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: x-large;
+}
+.list-inline-item i{
+    font-size: x-large;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
